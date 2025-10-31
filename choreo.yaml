@@ -1,0 +1,11 @@
+version: 0.1
+components:
+  - name: jackett
+    source:
+      type: Docker
+      dockerfile: Dockerfile
+    endpoints:
+      - name: jackett
+        port: 9117
+        context: /
+        
